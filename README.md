@@ -1,7 +1,7 @@
 Steve's Secret Server
 ---------------------
 
-THis repository contains a simple [node.js](http://nodejs.org/) server which is designed to distribute "secrets" within a networked environment.
+This repository contains a simple [node.js](http://nodejs.org/) server which is designed to distribute "secrets" within a networked environment.
 
 What are secrets?  You get to decide, because this server will just handle the serving of JSON files, after ACL checks.
 
