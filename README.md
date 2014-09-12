@@ -1,25 +1,19 @@
 Steve's Secret Server
 ---------------------
 
-THis repository contains a simple [node.js](http://nodejs.org/) server which
-is designed to distribute "secrets" within a networked environment.
+THis repository contains a simple [node.js](http://nodejs.org/) server which is designed to distribute "secrets" within a networked environment.
 
-What are secrets?  You get to decide, because this server will just handle
-the serving of JSON files, after ACL checks.
+What are secrets?  You get to decide, because this server will just handle the serving of JSON files, after ACL checks.
 
-The use-case here is that several remote servers need to know usernames
-and passwords, and they shouldn't be encoded in a publicly visible source
-tree.  Instead they should be discovered at run-time.
+The use-case here is that several remote servers need to know usernames and passwords, and they shouldn't be encoded in a publicly visible source tree.  Instead they should be discovered at run-time.
 
 
 Secret Protection
 -----------------
 
-Secrets are assumed to be stored in JSON files, and each collection of
-secrets is tied to an IP address.
+Secrets are assumed to be stored in JSON files, and each collection ofsecrets is tied to an IP address.
 
-For example your server might be running at http://secret.example.org/ and
-you might have two clients "10.0.0.2" and "10.0.0.3", each of those may
+For example your server might be running at http://secret.example.org/ and you might have two clients "10.0.0.2" and "10.0.0.3", each of those may
 make a request for:
 
 * http://secret.example.org/db
